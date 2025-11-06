@@ -20,7 +20,7 @@ const links = [
         href: '/gas-boilder-services',
     },
     {
-        title: 'Radiators and Heating Upgrades',
+        title: 'Radiator services',
         href: '/radiators',
     },
     {
@@ -28,7 +28,7 @@ const links = [
         href: '/heating-upgrades',
     },
     {
-        title: 'Smart Controls',
+        title: 'Heating Upgrades & Smart Controls',
         href: '/smart-controls',
     },
 ]
