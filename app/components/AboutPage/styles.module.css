@@ -56,6 +56,7 @@
     max-height: 600px;
     object-fit: cover;
     filter: brightness(88%);
+    max-height: 600px;
 }
 
 .heroPoints {
@@ -281,7 +282,7 @@
     }
 
     .content img {
-        height: 500px;
+        max-height: 500px;
     }
 
     .point {
@@ -305,7 +306,7 @@
     .donePoints {
         margin-top: 50px;
         display: flex;
-        gap:12px;
+        gap: 12px;
         flex-direction: column;
     }
 }

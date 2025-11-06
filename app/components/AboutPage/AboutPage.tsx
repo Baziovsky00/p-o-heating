@@ -40,7 +40,7 @@ const AboutPage = () => {
                         <h2>Trusted <motion.span
                             initial={{ color: '#303030' }}
                             whileInView={{ color: '#ff6600' }}
-                            transition={{ duration: 0.6, type: 'spring', delay: 0.2 }}
+                            transition={{ duration: 0.6, type: 'spring', delay: 0.4 }}
                             viewport={{ once: true }}>Gas & Heating Services</motion.span> in Weston-super-Mare. <br />
                             Keeping homes safe, warm, and efficient</h2>
                     </div>
