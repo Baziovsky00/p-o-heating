@@ -73,8 +73,8 @@ const AboutPage = () => {
                         <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/about-section2.webp'} width={800} height={800} alt='Local Heating Engineer in Weston-super-Mare.' />
                         <div>
                             <p className={styles.sectionPar}>
-                                My name is Paweł Olszewski and I am the founder of P O Heating. I am a certified Gas Safe engineer in Weston-super-Mare.
-                                With <span>years of hands-on experience in boiler repairs, heating installations, and smart control systems</span>, I built P O Heating on three simple values — safety, reliability, and honest service.
+                                My name is Paweł Olszewski and I am the founder of PO Heating. I am a certified Gas Safe engineer in Weston-super-Mare.
+                                With <span>years of hands-on experience in boiler repairs, heating installations, and smart control systems</span>, I built PO Heating on three simple values — safety, reliability, and honest service.
                             </p>
                             <p className={styles.sectionPar}>
                                 Every home deserves efficient, affordable heating — and that’s what <span> we deliver across Weston-super-Mare and North Somerset</span>. Whether it’s a small leak or a full system upgrade, you can expect precision workmanship and personal care on every job.
@@ -89,7 +89,7 @@ const AboutPage = () => {
                         viewport={{ once: true, amount: 0.12 }}
                     >
                         <h2>Ready to Book Your Heating Service in Weston-super-Mare?</h2>
-                        <p>Keep your home safe, warm, and energy-efficient with trusted heating and gas services from P O Heating.
+                        <p>Keep your home safe, warm, and energy-efficient with trusted heating and gas services from PO Heating.
                             Whether you need a quick boiler repair, an annual service, or a full heating upgrade, we’re here to help — always certified, professional, and local.</p>
                         <Link href={'/#contact'}>
                             Call me
@@ -106,7 +106,7 @@ const AboutPage = () => {
                     <div className={styles.section3Content}>
                         <div>
                             <p className={styles.sectionPar}>
-                                Choosing the right heating engineer matters — and at P O Heating, we take pride in long-term customer relationships.
+                                Choosing the right heating engineer matters — and at PO Heating, we take pride in long-term customer relationships.
                                 We’re not a big corporate company — we’re your local expert, always just a call away when your home needs professional attention.
                             </p>
                         </div>

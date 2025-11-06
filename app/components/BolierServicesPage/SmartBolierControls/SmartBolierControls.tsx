@@ -37,7 +37,7 @@ const SmartBolierControls = () => {
                     <h2>&mdash; &nbsp; Smart Boiler Controls</h2>
                     <h3>Intelligent Heating, Greater Comfort</h3>
                 </div>
-                <p className={styles.sectionPar}>Upgrade your home’s efficiency with smart boiler controls that let you manage your hot water and heating with ease. Our team installs and configures modern thermostats and smart control systems compatible with most popular boiler brands.</p>
+                <p className={styles.sectionPar}>Upgrade your home’s efficiency with smart boiler controls that let you manage your hot water and heating with ease. We install and configures modern thermostats and smart control systems compatible with most popular boiler brands.</p>
 
                 <motion.div className={styles.points}
                     variants={containerVariants}

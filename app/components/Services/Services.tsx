@@ -7,10 +7,14 @@ import { motion } from 'framer-motion';
 const cardVariants = {
     hidden: {
         backgroundColor: '#ffffff',
+        border: '1px solid rgba(0, 0, 0, 0)',
+        boxShadow: '0px',
         y: 10
     },
     visible: (custom: any) => ({
         backgroundColor: custom,
+        border: '1px solid rgb(218, 218, 218)',
+        boxShadow: '0px 8px 16px rgba(0,0,0,0.06)',
         y: 0,
         transition: {
             // Czas trwania animacji koloru i wejścia

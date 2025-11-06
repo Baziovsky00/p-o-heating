@@ -10,7 +10,7 @@ const Contact = () => {
                     <h3>Get in Touch with Your Local Heating Expert</h3>
                 </div>
                 <div className={styles.bottom}>
-                    <p className={styles.par}>Need a boiler service, radiator repair, or gas cooker installation? P.O. Heating provides professional heating solutions for homeowners in Weston-super-Mare and surrounding areas.
+                    <p className={styles.par}>Need a boiler service, radiator repair, or gas cooker installation? PO Heating provides professional heating solutions for homeowners in Weston-super-Mare and surrounding areas.
                         Reach out today to book a service, request a quote, or get expert advice from a certified Gas Safe engineer. We’re committed to keeping your home safe, warm, and energy-efficient.</p>
                     <div className={styles.right}>
                         <h4>Contact Information</h4>

@@ -23,7 +23,7 @@ export default function FAQs() {
         {
             id: 'item-4',
             question: 'Can you install a new gas cooker or hob?',
-            answer: "Yes. As a Gas Safe registered engineer, we safely install, test, and certify all new gas cookers and hobs in Weston-super-Mare and surrounding areas.",
+            answer: "Yes. We safely install, test, and certify all new gas cookers and hobs in Weston-super-Mare and surrounding areas.",
         },
         {
             id: 'item-5',

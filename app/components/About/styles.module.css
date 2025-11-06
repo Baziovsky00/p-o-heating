@@ -30,6 +30,11 @@
     margin-bottom: 27px;
 }
 
+.content p span {
+    color: #2c2c2c;
+    font-weight: 600;
+}
+
 .bottom {
     margin-top: 60px;
     display: flex;
