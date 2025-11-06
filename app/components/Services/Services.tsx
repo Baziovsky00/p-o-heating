@@ -40,7 +40,7 @@ const Services = () => {
                                 whileInView="visible"
                                 viewport={{ once: true, amount: 0.2 }}
                             >
-                                <Image src={service.img} width={450} height={450} alt={`P O heating - ${service.topic}`} />
+                                <Image src={service.img} width={450} height={450} alt={`P O Heating - ${service.topic}`} />
                                 <div className={styles.right}>
                                     <h4 style={{ color: service.headerColor }}>{service.topic}</h4>
                                     <Link className={styles.title} href={service.link}><p>{service.name}</p></Link>
