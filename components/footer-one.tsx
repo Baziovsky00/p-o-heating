@@ -17,7 +17,7 @@ const links = [
     },
     {
         title: 'Gas Boiler Services',
-        href: '/gas-boilder-services',
+        href: '/gas-boiler-services',
     },
     {
         title: 'Radiator services',
