@@ -44,7 +44,7 @@ const AboutPage = () => {
                             viewport={{ once: true }}>Gas & Heating Services</motion.span> in Weston-super-Mare. <br />
                             Keeping homes safe, warm, and efficient</h2>
                     </div>
-                    <Image priority src={'/images/about-hero.jpg'} width={1300} height={1300} alt='Gas & Heating Services in Weston-super-Mare.' />
+                    <Image priority src={'/images/about-hero.webp'} width={1300} height={1300} alt='Gas & Heating Services in Weston-super-Mare.' />
                     <motion.div className={styles.heroPoints}
                         variants={containerVariants}
                         initial="hidden"
@@ -70,7 +70,7 @@ const AboutPage = () => {
                         <h3>A Local Heating Engineer You Can Trust</h3>
                     </div>
                     <div className={styles.section2Content}>
-                        <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/about-section2.jpg'} width={800} height={800} alt='Local Heating Engineer in Weston-super-Mare.' />
+                        <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/about-section2.webp'} width={800} height={800} alt='Local Heating Engineer in Weston-super-Mare.' />
                         <div>
                             <p className={styles.sectionPar}>
                                 My name is Paweł Olszewski and I am the founder of P O Heating. I am a certified Gas Safe engineer in Weston-super-Mare.

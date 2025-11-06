@@ -62,7 +62,7 @@ const services = [
     {
         headerColor: '#6e6e6e',
         backgroundColor: '#dfdfdfff',
-        img: '/images/services/bolier.png',
+        img: '/images/services/bolier.webp',
         link: '/boiler-services',
         topic: 'Boiler Service & Repairs',
         name: 'Keep Your Home Warm and Safe',
@@ -75,7 +75,7 @@ const services = [
     {
         headerColor: '#6e8299ff',
         backgroundColor: '#c2dcfaff',
-        img: '/images/services/smart-controls.png',
+        img: '/images/services/smart-controls.webp',
         link: '/smart-controls',
         topic: 'Heating upgrades & smart controls',
         name: 'Upgrade Your Heating System',
@@ -89,7 +89,7 @@ const services = [
     {
         headerColor: '#a5755cff',
         backgroundColor: '#ffc793ff',
-        img: '/images/services/radiator.png',
+        img: '/images/services/radiator.webp',
         link: '/radiators',
         topic: 'Radiators — installation & repair',
         name: 'Warmth Where You Need It',
@@ -102,7 +102,7 @@ const services = [
     {
         headerColor: '#41434dff',
         backgroundColor: '#a6adc2ff',
-        img: '/images/services/cooker.png',
+        img: '/images/services/cooker.webp',
         link: '/gas-appliance-installation',
         topic: 'Gas appliance installation',
         name: 'Safe Gas Cooker Installation',
