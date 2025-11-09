@@ -7,7 +7,7 @@ const Hero = () => {
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.headers}>
-                    <h1>Professional Gas & Heating Services in Weston-super-Mare</h1>
+                    <h1>Professional Gas & Heating Services in Weston-super-Mare, Bristol & Bridgwater</h1>
                     <p>We specialize in comprehensive boiler servicing, heating repairs, and smart home heating solutions for residents and businesses throughout Somerset.</p>
                 </div>
                 <div className={styles.cta}>

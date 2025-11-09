@@ -33,7 +33,7 @@ export default function FAQs() {
         {
             id: 'item-6',
             question: 'What areas do you cover?',
-            answer: 'We serve Weston-super-Mare, North Somerset, and nearby towns, providing reliable boiler, radiator, and gas appliance services.',
+            answer: 'We serve Weston-super-Mare, Bristol, Bridgwater, North Somerset, and nearby towns, providing reliable boiler, radiator, and gas appliance services.',
         },
     ]
 

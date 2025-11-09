@@ -14,7 +14,7 @@ const About = () => {
                 <div className={styles.bottom}>
                     <Image src={'/images/main-about.webp'} width={600} height={600} alt='Plumbing Services across Weston-super-Mare and North Somerset' />
                     <div className={styles.par}>
-                        <p>PO Heating provides <span>reliable gas and heating services throughout Weston-super-Mare and North Somerset.</span></p>
+                        <p>PO Heating provides <span>reliable gas and heating services throughout Weston-super-Mare, Bristol, Bridgwater and North Somerset.</span></p>
 
                         <p>With years of experience and full Gas Safe certification, we specialise in <span>boiler servicing, repairs, radiator installations, and smart heating controls</span> — always with a focus on safety, efficiency, and customer satisfaction.</p>
 

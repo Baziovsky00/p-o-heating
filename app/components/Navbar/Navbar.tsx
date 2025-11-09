@@ -55,8 +55,8 @@ const Navbar = () => {
             link: '/radiators-installations-n-repairs'
         },
         {
-            name: 'Gas Appliance Installation',
-            link: '/gas-appliance-installation'
+            name: 'Gas Appliances Installations',
+            link: '/gas-appliances-installations'
         },
         {
             name: 'Heating Upgrades & Smart Controls',

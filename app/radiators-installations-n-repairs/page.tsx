@@ -4,26 +4,26 @@ import RadiatorsAbout from '../components/RadiatorsPage/RadiatorsAbout/Radiators
 import RadiatorsOurProcess from '../components/RadiatorsPage/RadiatorsOurProcess/RadiatorsOurProcess';
 import RadiatorsProblems from '../components/RadiatorsPage/RadiatorsProblems/RadiatorsProblems';
 import styles from './styles.module.css'
-import RadiatorsCTA from '../components/RadiatorsPage/RadiatorsCTA/RadiatorsCTA';
 
 export const metadata: Metadata = {
-  title: "Radiator Installation & Repair in Weston-super-Mare, Bristol & Bridgwater | PO Heating",
+  title: "Gas Appliances Installations in Weston-super-Mare, Bristol & Bridgwater | P O Heating",
   description:
-    "Professional radiator installations and repairs in Weston-super-Mare, Bristol, and Bridgwater. P O Heating ensures efficient, reliable heating performance for your home all year round.",
+    "Professional gas cooker and hob installations in Weston-super-Mare, Bristol, and Bridgwater. Safe, compliant, and efficient gas fitting by P O Heating experts.",
   keywords: [
-    "radiator installation Weston-super-Mare",
-    "radiator repair Weston-super-Mare",
-    "radiator installation Bristol",
-    "radiator repair Bristol",
-    "radiator repair Bridgwater",
-    "heating engineer Weston-super-Mare",
-    "radiator leaks repair",
-    "radiator replacement North Somerset",
+    "gas appliances installations Weston-super-Mare",
+    "gas cooker installation Weston-super-Mare",
+    "gas hob installation Weston-super-Mare",
+    "gas cooker installation Bristol",
+    "gas hob installation Bristol",
+    "gas cooker installation Bridgwater",
+    "gas hob installation Bridgwater",
+    "Gas Safe engineer Weston-super-Mare",
+    "gas appliance fitting Somerset",
   ],
   openGraph: {
-    title: "Radiator Services in Weston-super-Mare, Bristol & Bridgwater | P O Heating",
+    title: "Gas Appliances Installations in Weston-super-Mare, Bristol & Bridgwater | P O Heating",
     description:
-      "Reliable radiator repairs and installations across Weston-super-Mare, Bristol, Bridgwater and North Somerset. Trusted heating specialists ensuring comfort and efficiency.",
+      "Certified gas cooker and hob installations across Weston-super-Mare, Bristol, Bridgwater, and North Somerset. Trusted local heating engineers ensuring safety and efficiency.",
     siteName: "P O Heating",
     locale: "en_GB",
     type: "article",
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
         url: "/images/poheating-metadata.jpg",
         width: 1200,
         height: 630,
-        alt: "Radiator installation Weston-super-Mare, Bristol and Bridgwater",
+        alt: "Gas appliances installations Weston-super-Mare, Bristol and Bridgwater",
       },
     ],
   },
   alternates: {
-    // canonical: "https://www.yourdomain.co.uk/radiator-installations",
+    // canonical: "https://www.yourdomain.co.uk/gas-appliance-installations",
     // languages: {
-    //   "en-GB": "https://www.yourdomain.co.uk/radiator-installations",
-    //   "pl-PL": "https://www.yourdomain.co.uk/pl/instalacje-grzejniki",
+    //   "en-GB": "https://www.yourdomain.co.uk/gas-appliance-installations",
+    //   "pl-PL": "https://www.yourdomain.co.uk/pl/instalacje-gazowe",
     // },
   },
 };

@@ -41,10 +41,10 @@ const AboutPage = () => {
                             initial={{ color: '#303030' }}
                             whileInView={{ color: '#ff6600' }}
                             transition={{ duration: 0.6, type: 'spring', delay: 0.4 }}
-                            viewport={{ once: true }}>Gas & Heating Services</motion.span> in Weston-super-Mare. <br />
+                            viewport={{ once: true }}>Gas & Heating Services</motion.span> in Weston-super-Mare and nearby towns. <br />
                             Keeping homes safe, warm, and efficient</h2>
                     </div>
-                    <Image priority src={'/images/about-hero.webp'} width={1300} height={1300} alt='Gas & Heating Services in Weston-super-Mare.' />
+                    <Image priority src={'/images/about-hero.webp'} width={1300} height={1300} alt='Gas & Heating Services in Weston-super-Mare and Nearby Towns.' />
                     <motion.div className={styles.heroPoints}
                         variants={containerVariants}
                         initial="hidden"
@@ -77,7 +77,7 @@ const AboutPage = () => {
                                 With <span>years of hands-on experience in boiler repairs, heating installations, and smart control systems</span>, I built PO Heating on three simple values — safety, reliability, and honest service.
                             </p>
                             <p className={styles.sectionPar}>
-                                Every home deserves efficient, affordable heating — and that’s what <span> we deliver across Weston-super-Mare and North Somerset</span>. Whether it’s a small leak or a full system upgrade, you can expect precision workmanship and personal care on every job.
+                                Every home deserves efficient, affordable heating — and that’s what <span> we deliver across Weston-super-Mare, Bristol, Bridgwater and North Somerset</span>. Whether it’s a small leak or a full system upgrade, you can expect precision workmanship and personal care on every job.
                             </p>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ const AboutPage = () => {
                         transition={{ duration: 1.2, type: 'spring' }}
                         viewport={{ once: true, amount: 0.12 }}
                     >
-                        <h2>Ready to Book Your Heating Service in Weston-super-Mare?</h2>
+                        <h2>Ready to Book Your Heating Service?</h2>
                         <p>Keep your home safe, warm, and energy-efficient with trusted heating and gas services from PO Heating.
                             Whether you need a quick boiler repair, an annual service, or a full heating upgrade, we’re here to help — always certified, professional, and local.</p>
                         <Link href={'/#contact'}>

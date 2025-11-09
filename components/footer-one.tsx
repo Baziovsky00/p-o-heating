@@ -25,7 +25,7 @@ const links = [
     },
     {
         title: 'Gas Appliance Installation',
-        href: '/heating-upgrades',
+        href: '/gas-appliances-installations',
     },
     {
         title: 'Heating Upgrades & Smart Controls',
