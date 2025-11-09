@@ -7,7 +7,6 @@ import { Phone } from 'lucide-react';
 
 const CallMeWidget = () => {
   const [visible, setVisible] = useState(false);
-  const phoneNumber = '+48790809686';
 
   useEffect(() => {
     const timer = setTimeout(() => setVisible(true), 1200);
