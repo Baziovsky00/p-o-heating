@@ -20,8 +20,8 @@ const links = [
         href: '/boiler-services',
     },
     {
-        title: 'Radiator services',
-        href: '/radiators',
+        title: 'Radiator Installations & Repairs',
+        href: '/radiators-installations-n-repairs',
     },
     {
         title: 'Gas Appliance Installation',

@@ -6,21 +6,21 @@ import SmartBolierControls from '../components/BolierServicesPage/SmartBolierCon
 import styles from './styles.module.css'
 
 export const metadata: Metadata = {
-  title: "Boiler Service & Repair in Weston-super-Mare | P O Heating",
+  title: "Boiler Service & Repair in Weston-super-Mare, Bristol & Bridgwater | PO Heating",
   description:
-    "Expert boiler servicing, repairs, and installations in Weston-super-Mare. Keep your home warm and efficient with certified Gas Safe engineer Paweł Olszewski.",
+    "Expert boiler servicing, repairs, and installations in Weston-super-Mare, Bristol and Bridgwater. Keep your home warm and efficient with certified Gas Safe engineer Paweł Olszewski.",
   keywords: [
-    "boiler service Weston-super-Mare",
+    "boiler service Weston-super-Mare, Bristol and Bridgwater",
     "boiler repair Weston-super-Mare",
     "new boiler installation",
     "gas boiler maintenance",
-    "boiler engineer Weston-super-Mare",
+    "boiler engineer Bristol",
     "emergency boiler repair",
   ],
   openGraph: {
-    title: "Boiler Services in Weston-super-Mare | P O Heating",
+    title: "Boiler Services in Weston-super-Mare, Bristol and Bridgwater | P O Heating",
     description:
-      "Certified boiler repairs, installations, and maintenance across Weston-super-Mare and North Somerset. Call now for fast, reliable service.",
+      "Certified boiler repairs, installations, and maintenance across Weston-super-Mare, Bristol, Bridgwater and North Somerset. Call now for fast, reliable service.",
     // url: "https://www.yourdomain.co.uk/boiler-services",
     siteName: "P O Heating",
     locale: "en_GB",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         url: "/images/poheating-metadata.jpg",
         width: 1200,
         height: 630,
-        alt: "Boiler Repair Weston-super-Mare",
+        alt: "Boiler Repair Weston-super-Mare, Bristol and Bridgwater",
       },
     ],
   },

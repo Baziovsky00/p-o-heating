@@ -21,25 +21,25 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Gas & Heating Services in Weston-super-Mare | Local Boiler & Heating Expert",
+  title: "Gas & Heating Services in Weston-super-Mare, Bristol & Bridgwater | Local Boiler & Heating Expert",
   description:
-    "Trusted local gas and heating engineer in Weston-super-Mare. Expert in boiler servicing, heating repairs, radiator installation and smart boiler controls. Call for reliable service today!",
+    "Trusted local gas and heating engineer in Weston-super-Mare, Bristol and Bridgwater. Expert in boiler servicing, heating repairs, radiator installation and smart boiler controls. Call for reliable service today!",
   keywords: [
-    "gas engineer Weston-super-Mare",
+    "gas engineer Weston-super-Mare, Bristol and Bridgwater",
     "boiler repair Weston-super-Mare",
-    "heating engineer Weston-super-Mare",
+    "heating engineer Weston-super-Mare, Bristol and Bridgwater",
     "radiator installation Weston-super-Mare",
     "smart boiler controls",
     "boiler service near me",
-    "gas boiler installation Weston-super-Mare",
-    "local heating expert Weston-super-Mare",
+    "gas boiler installation Bristol",
+    "local heating expert Bridgwater",
   ],
   openGraph: {
-    title: "Gas & Heating Services in Weston-super-Mare | Local Expert",
+    title: "Gas & Heating Services in Weston-super-Mare, Bristol and Bridgwater | Local Expert",
     description:
-      "Professional gas and heating services in Weston-super-Mare. From boiler repairs and servicing to smart heating upgrades — reliable, local, and affordable.",
+      "Professional gas and heating services in Weston-super-Mare, Bristol and Bridgwater. From boiler repairs and servicing to smart heating upgrades — reliable, local, and affordable.",
     // url: "https://www.yourdomain.co.uk/",
-    siteName: "Gas & Heating Services Weston-super-Mare",
+    siteName: "Gas & Heating Services in Weston-super-Mare, Bristol and Bridgwater",
     locale: "en_GB",
     type: "website",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         url: "/images/poheating-metadata.jpg",
         width: 1200,
         height: 630,
-        alt: "Gas & Heating Engineer in Weston-super-Mare",
+        alt: "Gas & Heating Engineer in Weston-super-Mare, Bristol and Bridgwater",
       },
     ],
   },
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Gas & Heating Services in Weston-super-Mare | Local Expert",
+    title: "Gas & Heating Services in Weston-super-Mare, Bristol and Bridgwater | Local Expert",
     description:
       "Reliable gas and heating engineer offering boiler repairs, servicing, and installations in Weston-super-Mare.",
     images: ["/images/poheating-metadata.jpg"],

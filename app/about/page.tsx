@@ -3,15 +3,15 @@ import AboutPage from '../components/AboutPage/AboutPage';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About P O Heating | Local Gas & Heating Engineer in Weston-super-Mare",
+  title: "About P O Heating | Local Gas & Heating Engineer in Weston-super-Mare, Bristol & Bridgwater",
   description:
-    "Learn more about P O Heating, founded by Gas Safe engineer Paweł Olszewski. Providing trusted heating and gas services across Weston-super-Mare and North Somerset.",
+    "Learn more about P O Heating, founded by Gas Safe engineer Paweł Olszewski. Providing trusted heating and gas services across Weston-super-Mare, Bristol, Bridgwater and North Somerset.",
   keywords: [
     "about P O Heating",
-    "gas safe engineer Weston-super-Mare",
+    "gas safe engineer Weston-super-Mare, Bristol and Bridgwater",
     "local heating expert",
     "Paweł Olszewski gas engineer",
-    "boiler specialist Weston-super-Mare",
+    "boiler specialist Bristol",
     "heating company Weston-super-Mare",
   ],
   openGraph: {

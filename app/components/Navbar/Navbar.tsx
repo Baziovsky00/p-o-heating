@@ -51,8 +51,8 @@ const Navbar = () => {
             link: '/boiler-services'
         },
         {
-            name: 'Radiator services',
-            link: '/radiators'
+            name: 'Radiator Installations & Repairs',
+            link: '/radiators-installations-n-repairs'
         },
         {
             name: 'Gas Appliance Installation',
