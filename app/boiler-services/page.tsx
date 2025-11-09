@@ -4,6 +4,7 @@ import BoliersServicingToInstalation from '../components/BolierServicesPage/Boli
 import BolierServicesHero from '../components/BolierServicesPage/Hero/page';
 import SmartBolierControls from '../components/BolierServicesPage/SmartBolierControls/SmartBolierControls';
 import styles from './styles.module.css'
+import CallMeWidget from '../components/CallMeWidget/callme-widget';
 
 export const metadata: Metadata = {
   title: "Boiler Service & Repair in Weston-super-Mare, Bristol & Bridgwater | PO Heating",
@@ -51,6 +52,7 @@ const BolierServices = () => {
             <BolierProblems />
             <BoliersServicingToInstalation />
             <SmartBolierControls />
+            <CallMeWidget />
         </div>
      );
 }

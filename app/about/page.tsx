@@ -1,6 +1,7 @@
 import styles from './styles.module.css'
 import AboutPage from '../components/AboutPage/AboutPage';
 import { Metadata } from 'next';
+import CallMeWidget from '../components/CallMeWidget/callme-widget';
 
 export const metadata: Metadata = {
   title: "About P O Heating | Local Gas & Heating Engineer in Weston-super-Mare, Bristol & Bridgwater",
@@ -45,6 +46,7 @@ const About = () => {
     return (
         <div className={styles.page}>
             <AboutPage />
+            <CallMeWidget />
         </div>
     );
 }

@@ -1,3 +1,4 @@
+import CallMeWidget from '../components/CallMeWidget/callme-widget';
 import GasAppliancesAbout from '../components/GasAppliancesPage/GasAppliancesAbout/GasAppliancesAbout';
 import GasAppliancesSafety from '../components/GasAppliancesPage/GasAppliancesSafety/GasAppliancesSafety';
 import GasAppliancesSteps from '../components/GasAppliancesPage/GasAppliancesSteps/GasAppliancesSteps';
@@ -11,6 +12,7 @@ const GasAppliancesInstallations = () => {
             <GasAppliancesAbout />
             <GasAppliancesSafety />
             <GasAppliancesSteps />
+            <CallMeWidget />
         </div>
      );
 }

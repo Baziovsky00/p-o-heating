@@ -5,6 +5,7 @@ import WhyUs from "./components/WhyUs/WhyUs";
 import Contact from "./components/Contact/Contact";
 import Faq from "./components/Faq/Faq";
 import TopPar from "./components/TopPar/TopServices";
+import CallMeWidget from "./components/CallMeWidget/callme-widget";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <WhyUs />
       <Contact />
       <Faq />
+      <CallMeWidget />
     </div>
   );
 }

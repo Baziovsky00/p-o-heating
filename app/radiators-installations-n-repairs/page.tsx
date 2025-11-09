@@ -4,6 +4,7 @@ import RadiatorsAbout from '../components/RadiatorsPage/RadiatorsAbout/Radiators
 import RadiatorsOurProcess from '../components/RadiatorsPage/RadiatorsOurProcess/RadiatorsOurProcess';
 import RadiatorsProblems from '../components/RadiatorsPage/RadiatorsProblems/RadiatorsProblems';
 import styles from './styles.module.css'
+import CallMeWidget from '../components/CallMeWidget/callme-widget';
 
 export const metadata: Metadata = {
   title: "Gas Appliances Installations in Weston-super-Mare, Bristol & Bridgwater | P O Heating",
@@ -52,7 +53,7 @@ const radiatorNHeatingUpgrades = () => {
             <RadiatorsAbout />
             <RadiatorsProblems />
             <RadiatorsOurProcess />
-            {/* <RadiatorsCTA /> */}
+            <CallMeWidget />
         </div>
      );
 }
