@@ -1,6 +1,8 @@
 .page {
     padding-block: 100px;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background-color: rgb(242, 242, 242);
 }
 
 .content {
@@ -108,8 +110,8 @@
 
 @media screen and (max-width: 768px) {
     .page {
-        margin-block: 0px;
-        padding-block: 50px;
+        margin-top: 60px;
+        padding-block: 60px;
     }
 
     .sectionHeading h2 {

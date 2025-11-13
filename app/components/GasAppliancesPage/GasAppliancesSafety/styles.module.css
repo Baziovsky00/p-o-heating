@@ -130,6 +130,7 @@
 @media screen and (max-width: 768px) {
     .page {
         padding-block: 70px;
+        margin-block: 10px;
     }
     
     .pageHeading h2 {

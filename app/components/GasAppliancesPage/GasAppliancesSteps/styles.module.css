@@ -133,6 +133,7 @@
 @media screen and (max-width: 768px) {
     .page {
         padding-block: 70px;
+        margin-block: 20px;
     }
     
     .pageHeading h2 {
@@ -169,6 +170,7 @@
     }
 
     .sectionPar {
+        margin-top: 35px;
         font-size: 1.14em;
     }
 

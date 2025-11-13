@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 768px) {
     .page {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .pageHeading h1 {
         font-size: 1.04em;
