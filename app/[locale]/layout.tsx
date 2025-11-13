@@ -7,7 +7,13 @@ import Head from "next/head";
 import { NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
 import { notFound } from "next/navigation";
-import { DEFAULT_LOCALE } from "@/i18n";
+import { LOCALES } from "@/i18n";
+import { getMessages } from "next-intl/server";
+
+type Props = {
+  children: ReactNode;
+  params: { locale: string };
+};
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -79,33 +85,42 @@ export const metadata: Metadata = {
   },
   category: "Heating and Plumbing Services",
 };
-
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export default async function LocaleLayout({
   children,
   params
 }: {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
+  // Validate the locale
+  if (!LOCALES.includes(locale as any)) {
+    notFound();
+  }
+
   let messages;
   try {
-    messages = (await import(`../../locales/${locale}.json`)).default;
-  } catch {
+    messages = await getMessages();
+  } catch (error) {
+    console.error('Failed to load messages:', error);
+    // Fallback to empty messages
+    messages = {};
   }
+
   return (
     <html lang={locale}>
       <Head>
         <link rel="preload" as="image" href="/images/poheating-hero.webp" />
       </Head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased`}
-      >
-        <NextIntlClientProvider locale={locale} messages={messages}>
+      <body>
+        <NextIntlClientProvider messages={messages}>
           <Navbar />
-          {children}
+          <main>{children}</main>
           <FooterSection />
         </NextIntlClientProvider>
       </body>

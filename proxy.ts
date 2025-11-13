@@ -38,9 +38,21 @@ import { LOCALES, DEFAULT_LOCALE } from './i18n';
 export default createMiddleware({
   locales: LOCALES,
   defaultLocale: DEFAULT_LOCALE,
-  localeDetection: true
+  localeDetection: true,
+  localePrefix: 'always'
 });
 
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: [
+    // Enable a redirect to a matching locale at the root
+    '/',
+    
+    // Set a cookie to remember the previous locale for
+    // all requests that have a locale prefix
+    '/(pl|en)/:path*',
+    
+    // Enable redirects that add missing locales
+    // (e.g. `/pathnames` -> `/en/pathnames`)
+    '/((?!_next|_vercel|.*\\..*).*)'
+  ]
 };
