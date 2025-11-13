@@ -41,8 +41,7 @@ const AboutPage = () => {
                             initial={{ color: '#303030' }}
                             whileInView={{ color: '#ff6600' }}
                             transition={{ duration: 0.6, type: 'spring', delay: 0.4 }}
-                            viewport={{ once: true }}>Gas & Heating Services</motion.span> in Weston-super-Mare and nearby towns. <br />
-                            Keeping homes safe, warm, and efficient</h2>
+                            viewport={{ once: true }}>Gas & Heating Services</motion.span> in Weston-super-Mare & Surrounding Areas.</h2>
                     </div>
                     <Image priority src={'/images/about-hero.webp'} width={1300} height={1300} alt='Gas & Heating Services in Weston-super-Mare and Nearby Towns.' />
                     <motion.div className={styles.heroPoints}

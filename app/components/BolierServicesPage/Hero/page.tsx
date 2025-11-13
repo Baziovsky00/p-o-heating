@@ -16,7 +16,7 @@ const BolierServicesHero = () => {
                         transition={{ duration: 0.6, type: 'spring', delay: 0.4 }}
                         viewport={{ once: true }}>Boiler Repairs, Installations & Services</motion.span> in Weston-super-Mare and Nearby Towns.</h2>
                 </div>
-                <Image priority sizes="(max-width: 768px) 100vw, 1920px" src={'/images/boiler-hero.webp'} width={1300} height={1300} alt='Bolier Repairs and Installations in Weston-super-Mare.' />
+                <Image priority sizes="(max-width: 768px) 100vw, 1920px" src={'/images/boiler-page-hero.webp'} width={1300} height={1300} alt='Bolier Repairs and Installations in Weston-super-Mare.' />
                 {/* <motion.div className={styles.heroPoints}
                     variants={containerVariants}
                     initial="hidden"
