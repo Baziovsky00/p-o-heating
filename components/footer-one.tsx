@@ -29,7 +29,7 @@ const links = [
     },
     {
         title: 'Heating Upgrades & Smart Controls',
-        href: '/smart-controls',
+        href: '/heating-upgrades-n-smart-controls',
     },
 ]
 

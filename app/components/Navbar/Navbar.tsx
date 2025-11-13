@@ -60,7 +60,7 @@ const Navbar = () => {
         },
         {
             name: 'Heating Upgrades & Smart Controls',
-            link: '/smart-controls'
+            link: '/heating-upgrades-n-smart-controls'
         }
     ]
 
