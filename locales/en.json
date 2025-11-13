@@ -4,5 +4,55 @@
     "description": "We specialize in comprehensive boiler servicing, heating repairs, and smart home heating solutions for residents and businesses throughout Somerset.",
     "callNow": "Call me now",
     "services": "Services"
+  },
+  "TopPar": {
+    "quote": "Gain reliable comfort and peace of mind with expert heating solutions designed to keep your home warm, efficient, and safe all year round."
+  },
+  "About": {
+    "aboutTitle": "About po heating",
+    "heading": "Reliable Heating Solutions for Every Home",
+    "imageAlt": "Plumbing Services across Weston-super-Mare and North Somerset",
+    "paragraph1": "PO Heating provides <span>reliable gas and heating services throughout Weston-super-Mare, Bristol, Bridgwater and North Somerset.</span>",
+    "paragraph2": "With years of experience and full Gas Safe certification, we specialise in <span>boiler servicing, repairs, radiator installations, and smart heating controls</span> — always with a focus on safety, efficiency, and customer satisfaction.",
+    "paragraph3": "From annual boiler maintenance to system upgrades and emergency repairs, PO Heating delivers professional service and honest advice you can rely on. We keep homes in Weston-super-Mare warm, safe, and energy-efficient all year round.",
+    "listItem1": "Qualified Gas Safe Engineer",
+    "listItem2": "Comprehensive Heating Services",
+    "listItem3": "Reliable Local Service"
+  },
+  "Services": {
+    "sectionHeading": {
+      "services": "services",
+      "title": "Professional Heating Services for Every Home"
+    },
+    "services": {
+      "boiler": {
+        "topic": "Boiler Service & Repairs",
+        "name": "Keep Your Home Warm and Safe",
+        "subheading": "Annual maintenance and fast repairs that keep your boiler efficient, safe, and ready for the cold season.",
+        "par": "A well-maintained boiler means peace of mind.\n        We provide certified servicing and expert repairs to keep your heating system running smoothly all year.\n        Whether it's a leak, a pressure issue, or strange noises — we diagnose, repair, and restore your boiler to full working order.\n        Regular servicing prevents costly breakdowns and ensures consistent heat throughout your home.",
+        "alt": "P O Heating - Boiler Service & Repairs"
+      },
+      "radiators": {
+        "topic": "Radiators — installation & repair",
+        "name": "Warmth Where You Need It",
+        "subheading": "From leaks to stylish upgrades — we make every radiator perform perfectly.",
+        "par": "Cold spots or leaking pipes? We'll fix it fast.\n        We balance your heating system for even warmth in every room, repair leaks, and replace old radiators with modern, designer options that combine efficiency with style.",
+        "alt": "P O Heating - Radiators — installation & repair"
+      },
+      "gas-appliance": {
+        "topic": "Gas appliance installation",
+        "name": "Safe Gas Cooker Installation",
+        "subheading": "Certified Gas Safe installation for cookers and hobs.",
+        "par": "When installing a new gas cooker or hob, safety is everything.\n        We provide certified gas-safe installation, ensuring your appliance is connected, tested, and compliant with all safety standards.\n        Enjoy peace of mind knowing your kitchen is safe and ready to use.",
+        "alt": "P O Heating - Gas appliance installation"
+      },
+      "smart-controls": {
+        "topic": "Heating upgrades & smart controls",
+        "name": "Upgrade Your Heating System",
+        "subheading": "Enhance comfort and energy efficiency with modern thermostats, filters, and stylish radiators.",
+        "par": "Upgrade your heating system with modern, efficient solutions.\n        We fit smart thermostats, magnetic filters, and designer radiators that make your home easier to manage and more sustainable.\n        Control your heating from your smartphone, cut energy costs, and enjoy quieter, cleaner performance every day.",
+        "alt": "P O Heating - Heating upgrades & smart controls"
+      }
+    }
   }
 }

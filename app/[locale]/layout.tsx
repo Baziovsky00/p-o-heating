@@ -117,7 +117,7 @@ export default async function LocaleLayout({
       <Head>
         <link rel="preload" as="image" href="/images/poheating-hero.webp" />
       </Head>
-      <body>
+      <body className={inter.className}>
         <NextIntlClientProvider messages={messages}>
           <Navbar />
           <main>{children}</main>
