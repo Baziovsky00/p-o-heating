@@ -43,7 +43,7 @@ const SmartBolierControls = () => {
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}>
+                    viewport={{ once: true, amount: 0.12 }}>
                     {
                         points.map((point, i) => (
                             <div className={styles.point} key={i}>
