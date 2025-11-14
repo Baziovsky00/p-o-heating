@@ -4,7 +4,7 @@ import GasAppliancesAbout from '../../components/GasAppliancesPage/GasAppliances
 import GasAppliancesBoliers from '../../components/GasAppliancesPage/GasAppliancesBoliers/GasAppliancesBoliers';
 import GasAppliancesSafety from '../../components/GasAppliancesPage/GasAppliancesSafety/GasAppliancesSafety';
 import GasAppliancesSteps from '../../components/GasAppliancesPage/GasAppliancesSteps/GasAppliancesSteps';
-import GasAppliancesHero from '../../components/GasAppliancesPage/Hero/page';
+import GasAppliancesHero from '../../components/GasAppliancesPage/GasAppliancesHero/GasAppliances';
 import styles from './styles.module.css'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {

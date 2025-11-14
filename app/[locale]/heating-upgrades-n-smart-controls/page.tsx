@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 import HeatingUpgradesAbout from "../../components/HeatingUpgradesSmartControls/HeatingUpgradesAbout/HeatingUpgradesAbout";
 import HeatingUpgradesBenefits from "../../components/HeatingUpgradesSmartControls/HeatingUpgradesBenefits/HeatingUpgradesBenefits";
 import HeatingUpgradesPoints from "../../components/HeatingUpgradesSmartControls/HeatingUpgradesPoints/HeatingUpgradesPoints";
-import HeatingUpgradesHero from "../../components/HeatingUpgradesSmartControls/Hero/page";
+import HeatingUpgradesHero from "../../components/HeatingUpgradesSmartControls/HeatingUpgradesHero/HeatingUpgradesHero";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;

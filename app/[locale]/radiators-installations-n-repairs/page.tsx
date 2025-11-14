@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import RadiatorsHero from '../../components/RadiatorsPage/Hero/page';
+import RadiatorsHero from '../../components/RadiatorsPage/RadiatorsHero/RadiatorsHero';
 import RadiatorsAbout from '../../components/RadiatorsPage/RadiatorsAbout/RadiatorsAbout';
 import RadiatorsOurProcess from '../../components/RadiatorsPage/RadiatorsOurProcess/RadiatorsOurProcess';
 import RadiatorsProblems from '../../components/RadiatorsPage/RadiatorsProblems/RadiatorsProblems';
