@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import CallMeWidget from '../../components/CallMeWidget/callme-widget';
 import GasAppliancesAbout from '../../components/GasAppliancesPage/GasAppliancesAbout/GasAppliancesAbout';
 import GasAppliancesBoliers from '../../components/GasAppliancesPage/GasAppliancesBoliers/GasAppliancesBoliers';
@@ -7,46 +7,48 @@ import GasAppliancesSteps from '../../components/GasAppliancesPage/GasAppliances
 import GasAppliancesHero from '../../components/GasAppliancesPage/Hero/page';
 import styles from './styles.module.css'
 
-export const metadata: Metadata = {
-  title: "Gas Appliances Installations in Weston-super-Mare, Bristol & Bridgwater | P O Heating",
-  description:
-    "Professional gas cooker, hob and boiler installations in Weston-super-Mare, Bristol, and Bridgwater. Safe, compliant, and efficient gas fitting by P O Heating experts.",
-  keywords: [
-    "gas appliances installations Weston-super-Mare",
-    "gas boiler installation Weston-super-Mare",
-    "gas hob installation Weston-super-Mare",
-    "gas cooker installation Bristol",
-    "gas boiler installation Bristol",
-    "gas cooker installation Bridgwater",
-    "gas hob installation Bridgwater",
-    "Gas Safe engineer Weston-super-Mare",
-    "gas appliance fitting Somerset",
-  ],
-  openGraph: {
-    title: "Gas Appliances Installations in Weston-super-Mare, Bristol & Bridgwater | P O Heating",
-    description:
-      "Certified gas cooker, hob and boiler installations across Weston-super-Mare, Bristol, Bridgwater, and North Somerset. Trusted local heating engineers ensuring safety and efficiency.",
-    siteName: "P O Heating",
-    locale: "en_GB",
-    type: "article",
-    images: [
-      {
-        url: "/images/poheating-metadata.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Gas appliances installations Weston-super-Mare, Bristol and Bridgwater",
-      },
-    ],
-  },
-  alternates: {
-    // canonical: "https://www.yourdomain.co.uk/gas-appliance-installations",
-    // languages: {
-    //   "en-GB": "https://www.yourdomain.co.uk/gas-appliance-installations",
-    //   "pl-PL": "https://www.yourdomain.co.uk/pl/instalacje-gazowe",
-    // },
-  },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'GasAppliances.metadata' });
 
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: [
+      t('keywords.gasAppliancesInstallations'),
+      t('keywords.gasBoilerInstallation'),
+      t('keywords.gasHobInstallation'),
+      t('keywords.gasCookerInstallationBristol'),
+      t('keywords.gasBoilerInstallationBristol'),
+      t('keywords.gasCookerInstallationBridgwater'),
+      t('keywords.gasHobInstallationBridgwater'),
+      t('keywords.gasSafeEngineer'),
+      t('keywords.gasApplianceFitting'),
+    ],
+    openGraph: {
+      title: t('openGraph.title'),
+      description: t('openGraph.description'),
+      siteName: t('openGraph.siteName'),
+      locale: locale === 'pl' ? 'pl_PL' : 'en_GB',
+      type: "article",
+      images: [
+        {
+          url: "/images/poheating-metadata.jpg",
+          width: 1200,
+          height: 630,
+          alt: t('openGraph.imageAlt'),
+        },
+      ],
+    },
+    alternates: {
+      // canonical: "https://www.yourdomain.co.uk/gas-appliance-installations",
+      // languages: {
+      //   "en-GB": "https://www.yourdomain.co.uk/gas-appliance-installations",
+      //   "pl-PL": "https://www.yourdomain.co.uk/pl/instalacje-gazowe",
+      // },
+    },
+  };
+}
 
 const GasAppliancesInstallations = () => {
     return ( 

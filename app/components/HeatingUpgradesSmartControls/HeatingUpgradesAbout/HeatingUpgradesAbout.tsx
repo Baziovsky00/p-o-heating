@@ -1,29 +1,29 @@
 'use client'
 import Image from 'next/image';
 import styles from './styles.module.css'
-import { CheckCircle } from 'lucide-react';
-import { motion } from 'framer-motion';
-
+import { useTranslations } from 'next-intl';
 
 const HeatingUpgradesAbout = () => {
+    const t = useTranslations('HeatingUpgrades.About');
+
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.sectionHeading}>
-                    <h2>&mdash; &nbsp; About the Service</h2>
-                    <h3>Professional Heating Upgrades for Every Home</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.section2Content}>
-                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/heating-upgrades-about.webp'} width={800} height={800} alt='Installing designer radiators' />
+                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/heating-upgrades-about.webp'} width={800} height={800} alt={t('imageAlt')} />
                     <div>
                         <p className={styles.sectionPar}>
-                            We fit <span>smart boiler controllers, magnetic filters, and designer radiators</span>. Every component is selected to work seamlessly together, giving you a modern, reliable solution that lasts for years.
+                            {t('paragraph1.part1')} <span>{t('paragraph1.span')}</span>{t('paragraph1.part2')}
                         </p>
                         <p className={styles.sectionPar}>
-                            Our upgrades <span>help reduce energy waste, extend your heating system’s lifespan</span>, and ensure consistent warmth throughout every room. We make sure your home stays cozy while lowering your energy bills.
+                            {t('paragraph2.part1')} <span>{t('paragraph2.span')}</span> {t('paragraph2.part2')}
                         </p>
                         <p className={styles.sectionPar}>
-                            Serving homes in Weston-super-Mare, Bristol, and Bridgwater, we tailor each installation to the unique layout and requirements of your property.
+                            {t('paragraph3')}
                         </p>
                     </div>
                 </div>

@@ -14,11 +14,11 @@ const FooterSection = () => {
         },
         {
             title: t('links.services'),
-            href: '#services',
+            href: '/#services',
         },
         {
             title: t('links.contact'),
-            href: '#contact',
+            href: '/#contact',
         },
         {
             title: t('links.boilerServices'),
@@ -35,6 +35,14 @@ const FooterSection = () => {
         {
             title: t('links.heatingUpgrades'),
             href: '/heating-upgrades-n-smart-controls',
+        },
+        {
+            title: t('links.privacyPolicy'),
+            href: '/privacy-policy',
+        },
+        {
+            title: t('links.cookiesPolicy'),
+            href: '/cookies-policy',
         },
     ]
 

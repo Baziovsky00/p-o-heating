@@ -3,9 +3,10 @@ import styles from './styles.module.css'
 import { motion } from 'framer-motion';
 import { DropletIcon, Smartphone, TrendingUp } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const HeatingUpgradesPoints = () => {
+    const t = useTranslations('HeatingUpgrades.Points');
 
     const itemVariants = {
         hidden: { opacity: 0, scale: 1, y: 40 },
@@ -32,16 +33,33 @@ const HeatingUpgradesPoints = () => {
         },
     };
 
+    const points = [
+        {
+            icon: <Smartphone size={31}/>,
+            title: t('points.control.title'),
+            desc: t('points.control.desc')
+        },
+        {
+            icon: <DropletIcon size={31}/>,
+            title: t('points.heatDistribution.title'),
+            desc: t('points.heatDistribution.desc')
+        },
+        {
+            icon: <TrendingUp size={31}/>,
+            title: t('points.energySave.title'),
+            desc: t('points.energySave.desc')
+        }
+    ];
 
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.pageHeading}>
-                    <h2>&mdash; &nbsp; Energy Savings & Comfort</h2>
-                    <h3>More Comfort, Less Energy Waste</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.bottomContent}>
-                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/heating-upgrades-points.webp'} width={800} height={800} alt='Energy save and comfort with heating upgrades' />
+                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/heating-upgrades-points.webp'} width={800} height={800} alt={t('imageAlt')} />
                     <motion.div className={styles.points}
                         variants={containerVariants}
                         initial="hidden"
@@ -65,21 +83,3 @@ const HeatingUpgradesPoints = () => {
 }
 
 export default HeatingUpgradesPoints;
-
-const points = [
-    {
-        icon: <Smartphone size={31}/>,
-        title: 'Control Your Heating Anytime',
-        desc: 'Take full control of your home’s temperature from your phone. Smart scheduling and remote access mean you only heat rooms when needed, saving energy and money.'
-    },
-    {
-        icon: <DropletIcon size={31}/>,
-        title: 'Even Heat Distribution',
-        desc: 'Designer radiators and magnetic filters ensure warm, consistent rooms while protecting your boiler from sludge buildup and inefficiencies.'
-    },
-    {
-        icon: <TrendingUp size={31}/>,
-        title: 'Save Energy & Stay Cozy',
-        desc: 'Optimized heating reduces waste, lowers energy bills, and keeps every corner of your home perfectly comfortable, all year round.'
-    }
-];

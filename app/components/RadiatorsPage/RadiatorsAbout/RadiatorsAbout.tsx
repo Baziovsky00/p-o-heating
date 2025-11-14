@@ -1,25 +1,28 @@
 import Image from 'next/image';
 import styles from './styles.module.css'
+import { useTranslations } from 'next-intl';
 
 const RadiatorsAbout = () => {
+    const t = useTranslations('Radiators.About');
+
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.sectionHeading}>
-                    <h2>&mdash; &nbsp; what we do</h2>
-                    <h3>Professional Radiator Services</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.section2Content}>
-                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/radiators-about.jpg'} width={800} height={800} alt='Radiators Installations & Repairs' />
+                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/radiators-about.jpg'} width={800} height={800} alt={t('imageAlt')} />
                     <div>
                         <p className={styles.sectionPar}>
-                            We specialize in <span>radiator installation, replacement, and repair</span> — helping homeowners throughout Weston-super-Mare, Bristol, and Bridgwater keep their heating systems running smoothly.
+                            {t('paragraph1.part1')} <span>{t('paragraph1.span')}</span> {t('paragraph1.part2')}
                         </p>
                         <div className={styles.sectionPar}>
-                            Whether it’s a <span>leaking valve, uneven heating, or a full replacement, we ensures every radiator is installed safely and performs at its best</span>.
+                            {t('paragraph2.part1')} <span>{t('paragraph2.span')}</span>{t('paragraph2.part2')}
                         </div>
                         <p className={styles.sectionPar}>
-                            We also offer advice on modern, energy-efficient radiator solutions that complement your home’s design and improve overall comfort.
+                            {t('paragraph3')}
                         </p>
                     </div>
                 </div>

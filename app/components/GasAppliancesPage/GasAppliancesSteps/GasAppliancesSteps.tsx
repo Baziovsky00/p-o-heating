@@ -2,9 +2,10 @@
 import styles from './styles.module.css'
 import { motion } from 'framer-motion';
 import { CheckCircle, ClipboardCheck, PlugZap, Wrench } from 'lucide-react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const GasAppliancesSteps = () => {
+    const t = useTranslations('GasAppliances.Steps');
 
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.92 },
@@ -30,16 +31,38 @@ const GasAppliancesSteps = () => {
         },
     };
 
+    const points = [
+        {
+            icon: <ClipboardCheck size={28}/>,
+            title: t('points.initialCheck.title'),
+            desc: t('points.initialCheck.desc')
+        },
+        {
+            icon: <PlugZap size={28}/>,
+            title: t('points.safeDisconnection.title'),
+            desc: t('points.safeDisconnection.desc')
+        },
+        {
+            icon: <Wrench size={28}/>,
+            title: t('points.preciseInstallation.title'),
+            desc: t('points.preciseInstallation.desc')
+        },
+        {
+            icon: <CheckCircle size={28}/>,
+            title: t('points.finalTesting.title'),
+            desc: t('points.finalTesting.desc')
+        }
+    ];
 
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.pageHeading}>
-                    <h2>&mdash; &nbsp; Our Process</h2>
-                    <h3>How our installation process works</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.sectionPar}>
-                    We make your cooker or hob installation straightforward and stress-free. Here’s how it works:
+                    {t('sectionPar')}
                 </div>
                 <motion.div className={styles.points}
                     variants={containerVariants}
@@ -62,26 +85,3 @@ const GasAppliancesSteps = () => {
 }
 
 export default GasAppliancesSteps;
-
-const points = [
-    {
-        icon: <ClipboardCheck size={28}/>,
-        title: 'Initial Check',
-        desc: 'We assess your kitchen setup and gas supply to ensure it’s ready for a new appliance.'
-    },
-    {
-        icon: <PlugZap size={28}/>,
-        title: 'Safe Disconnection',
-        desc: 'If needed, we disconnect your old cooker or hob safely and cleanly.'
-    },
-    {
-        icon: <Wrench size={28}/>,
-        title: 'Precise Installation',
-        desc: 'We connect your new appliance securely, test for leaks, and check operation.'
-    },
-    {
-        icon: <CheckCircle size={28}/>,
-        title: 'Final Testing',
-        desc: 'Once everything’s working perfectly, we show you how to use your new cooker safely.'
-    }
-];

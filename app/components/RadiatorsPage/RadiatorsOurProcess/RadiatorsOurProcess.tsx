@@ -3,8 +3,10 @@ import styles from './styles.module.css'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const RadiatorsOurProcess = () => {
+    const t = useTranslations('Radiators.OurProcess');
 
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.92, y: 10 },
@@ -31,54 +33,53 @@ const RadiatorsOurProcess = () => {
         },
     };
 
+    const points = [
+        {
+            title: t('points.assessment.title'),
+            desc: t('points.assessment.desc')
+        },
+        {
+            title: t('points.repair.title'),
+            desc: t('points.repair.desc')
+        },
+        {
+            title: t('points.installation.title'),
+            desc: t('points.installation.desc')
+        },
+        {
+            title: t('points.testing.title'),
+            desc: t('points.testing.desc')
+        }
+    ];
 
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.pageHeading}>
-                    <h2>&mdash; &nbsp; Our Process</h2>
-                    <h3>A Simple, Stress-Free Process — from Quote to Comfort</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <p className={styles.sectionPar}>
-                    Our service is designed to be fast, transparent, and hassle-free. Whether you’re in Weston-super-Mare, Bristol, or Bridgwater, we make sure every job runs smoothly from start to finish.
+                    {t('sectionPar')}
                 </p>
-                    <motion.div className={styles.points}
-                        variants={containerVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, amount: 0.12 }}>
-                        {
-                            points.map((point, i) => (
-                                <motion.div className={styles.point} key={i} variants={itemVariants}>
-                                    <div className={styles.icon}>{i + 1}</div>
-                                    <h3>{point.title}</h3>
-                                    <p>{point.desc}</p>
-                                </motion.div>
-                            ))
-                        }
-                    </motion.div>
+                <motion.div className={styles.points}
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.12 }}>
+                    {
+                        points.map((point, i) => (
+                            <motion.div className={styles.point} key={i} variants={itemVariants}>
+                                <div className={styles.icon}>{i + 1}</div>
+                                <h4>{point.title}</h4>
+                                <p>{point.desc}</p>
+                            </motion.div>
+                        ))
+                    }
+                </motion.div>
             </div>
         </div>
     );
 }
 
 export default RadiatorsOurProcess;
-
-const points = [
-    {
-        title: 'Initial Assessment',
-        desc: 'We visit your property, assess your heating system, and provide a clear quote.'
-    },
-    {
-        title: 'Repair or Removal',
-        desc: 'We safely carry out repairs or remove your old radiator.'
-    },
-    {
-        title: 'Installation & Balancing',
-        desc: 'We install or refit your radiator and balance your heating system.'
-    },
-    {
-        title: 'Quality Testing',
-        desc: 'Every system is tested for leaks, pressure, and heat consistency before completion.'
-    }
-];

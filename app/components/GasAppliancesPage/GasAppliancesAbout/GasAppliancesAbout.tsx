@@ -3,21 +3,38 @@ import Image from 'next/image';
 import styles from './styles.module.css'
 import { CheckCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
-
+import { useTranslations } from 'next-intl';
 
 const GasAppliancesAbout = () => {
+    const t = useTranslations('GasAppliances.About');
+
+    const points = [
+        {
+            title: t('points.safeConnection')
+        },
+        {
+            title: t('points.removal')
+        },
+        {
+            title: t('points.testing')
+        },
+        {
+            title: t('points.neatFinish')
+        }
+    ]
+
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.sectionHeading}>
-                    <h2>&mdash; &nbsp; About the Service</h2>
-                    <h3>Cookers and hobs installed with precision and care</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.section2Content}>
-                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/gas-appliances-about-img.webp'} width={800} height={800} alt='Radiators Installations & Repairs' />
+                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/gas-appliances-about-img.webp'} width={800} height={800} alt={t('imageAlt')} />
                     <div>
                         <p className={styles.sectionPar}>
-                            We provide complete <span>new cookers and gas hobs installation</span> services for homeowners and landlords across Weston-super-Mare, Bristol, and Bridgwater. <span>From connecting new cookers to replacing existing hobs</span>, every job is handled with precision, care, and attention to safety.
+                            {t('paragraph.part1')} <span>{t('paragraph.span1')}</span> {t('paragraph.part2')} <span>{t('paragraph.span2')}</span>{t('paragraph.part3')}
                         </p>
                         <div className={styles.points}>
                             {
@@ -40,18 +57,3 @@ const GasAppliancesAbout = () => {
 }
 
 export default GasAppliancesAbout;
-
-const points = [
-    {
-        title: 'Safe connection to your existing gas supply'
-    },
-    {
-        title: 'Removal of old appliances (if required)'
-    },
-    {
-        title: 'Testing for leaks and performance'
-    },
-    {
-        title: 'Neat, clean finish — ready to use immediately'
-    }
-]

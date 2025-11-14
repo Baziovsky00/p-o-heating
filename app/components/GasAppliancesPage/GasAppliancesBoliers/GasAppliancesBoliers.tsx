@@ -2,9 +2,10 @@
 import styles from './styles.module.css'
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const GasAppliancesBoliers = () => {
+    const t = useTranslations('GasAppliances.Boliers');
 
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.92 },
@@ -30,24 +31,23 @@ const GasAppliancesBoliers = () => {
         },
     };
 
-
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.sectionHeading}>
-                    <h2>&mdash; &nbsp; boliers installations</h2>
-                    <h3>Boilers Installed Safely, Efficiently, and Hassle-Free</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.section2Content}>
-                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/gas-appliances-boilers.webp'} width={800} height={800} alt='Boliers Installations & Repairs' />
+                    <Image sizes="(max-width: 768px) 100vw, 1920px" src={'/images/gas-appliances-boilers.webp'} width={800} height={800} alt={t('imageAlt')} />
                     <div>
-                        <h4>Comprehensive Boiler Installation Services</h4>
+                        <h4>{t('comprehensiveTitle')}</h4>
                         <p className={styles.sectionPar}>
-                            We aslo provide professional boiler installation services for homes and businesses. Whether you need a new gas boiler for your property or an upgrade to a more energy-efficient system, we handle every installation with precision and care.
+                            {t('comprehensiveDescription')}
                         </p>
-                        <h4>Safe, Compliant, and Reliable</h4>
+                        <h4>{t('safeTitle')}</h4>
                         <div className={styles.sectionPar}>
-                            All installations are carried out in full compliance with Gas Safe regulations, ensuring your boiler operates safely and efficiently. We carefully checks all pipework, connections, and settings before completing the job, giving you peace of mind and reliable heating throughout the year.
+                            {t('safeDescription')}
                         </div>
                     </div>
                 </div>

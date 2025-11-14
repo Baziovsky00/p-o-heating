@@ -2,8 +2,10 @@
 import styles from './styles.module.css'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const RadiatorsProblems = () => {
+    const t = useTranslations('Radiators.Problems');
 
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.92 },
@@ -29,16 +31,38 @@ const RadiatorsProblems = () => {
         },
     };
 
+    const points = [
+        {
+            icon: '💧',
+            title: t('points.leaks.title'),
+            desc: t('points.leaks.desc')
+        },
+        {
+            icon: '🌡️',
+            title: t('points.coldSpots.title'),
+            desc: t('points.coldSpots.desc')
+        },
+        {
+            icon: '🔊',
+            title: t('points.noisy.title'),
+            desc: t('points.noisy.desc')
+        },
+        {
+            icon: '⚙️',
+            title: t('points.lowHeat.title'),
+            desc: t('points.lowHeat.desc')
+        }
+    ];
 
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.pageHeading}>
-                    <h2>&mdash; &nbsp; Fixed Fast</h2>
-                    <h3>Common Radiator Issues We Fix</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <p className={styles.sectionPar}>
-                    Homeowners in Weston-super-Mare, Bristol, and Bridgwater often face similar radiator issues — and our experts have solutions for all of them:
+                    {t('sectionPar')}
                 </p>
                 <motion.div className={styles.points}
                     variants={containerVariants}
@@ -49,40 +73,17 @@ const RadiatorsProblems = () => {
                         points.map((point, i) => (
                             <motion.div className={styles.point} key={i} variants={itemVariants}>
                                 <div className={styles.icon}>{point.icon}</div>
-                                <h3>{point.title}</h3>
+                                <h4>{point.title}</h4>
                                 <p>{point.desc}</p>
                             </motion.div>
                         ))
                     }
                 </motion.div>
 
-                <Link className={styles.cta} href={'/#contact'}>Request Emergency Repair</Link>
+                <Link className={styles.cta} href={'/#contact'}>{t('cta')}</Link>
             </div>
         </div>
     );
 }
 
 export default RadiatorsProblems;
-
-const points = [
-    {
-        icon: '💧',
-        title: 'Leaking valves or joints',
-        desc: 'We quickly find and fix leaks to prevent water damage and inefficiency'
-    },
-    {
-        icon: '🌡️',
-        title: 'Cold spots or uneven heating',
-        desc: 'We bleed and balance your system to ensure even warmth'
-    },
-    {
-        icon: '🔊',
-        title: 'Noisy or gurgling radiators',
-        desc: 'We remove trapped air and restore silent, efficient operation'
-    },
-        {
-        icon: '⚙️',
-        title: 'Low heat output',
-        desc: 'We diagnose and resolve blockages or valve problems for full performance'
-    }
-];

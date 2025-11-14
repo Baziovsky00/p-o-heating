@@ -2,8 +2,10 @@
 import styles from './styles.module.css'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 const GasAppliancesSafety = () => {
+    const t = useTranslations('GasAppliances.Safety');
 
     const itemVariants = {
         hidden: { opacity: 0, scale: 0.92 },
@@ -29,16 +31,30 @@ const GasAppliancesSafety = () => {
         },
     };
 
+    const points = [
+        {
+            icon: '🛠️',
+            title: t('points.inspection'),
+        },
+        {
+            icon: '✅',
+            title: t('points.compliant'),
+        },
+        {
+            icon: '👨‍🔧',
+            title: t('points.service'),
+        }
+    ];
 
     return (
         <div className={styles.page}>
             <div className={styles.content}>
                 <div className={styles.pageHeading}>
-                    <h2>&mdash; &nbsp; Safety & Experience</h2>
-                    <h3>Your safety and satisfaction come first</h3>
+                    <h2>&mdash; &nbsp; {t('heading')}</h2>
+                    <h3>{t('subheading')}</h3>
                 </div>
                 <div className={styles.sectionPar}>
-                    We know how important it is to have gas work done safely and properly. That’s why we always take the time to check all connections, fittings, and gas lines before completing any installation. With years of experience serving Weston-super-Mare, Bristol, and Bridgwater, you can trust us to get the job done right — the first time.
+                    {t('sectionPar')}
                 </div>
                 <motion.div className={styles.points}
                     variants={containerVariants}
@@ -55,25 +71,10 @@ const GasAppliancesSafety = () => {
                     }
                 </motion.div>
 
-                <Link className={styles.cta} href={'/#contact'}>Book Your gas appliance installation</Link>
+                <Link className={styles.cta} href={'/#contact'}>{t('cta')}</Link>
             </div>
         </div>
     );
 }
 
 export default GasAppliancesSafety;
-
-const points = [
-    {
-        icon: '🛠️',
-        title: 'Careful inspection of your existing gas line',
-    },
-    {
-        icon: '✅',
-        title: 'Fully compliant with current safety regulations',
-    },
-    {
-        icon: '👨‍🔧',
-        title: 'Friendly, tidy, and professional service',
-    }
-];
