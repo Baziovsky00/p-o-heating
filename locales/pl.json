@@ -141,7 +141,7 @@
     "items": {
       "item1": {
         "question": "Jak często powinienem serwisować bojler?",
-        "answer": "Roczny serwis bojlera jest zalecany w celu utrzymania wydajności, zapobiegania awariom i zapewnienia ważności gwarancji. Świadczymy certyfikowany serwis bojlerów na terenie Weston-super-Mare."
+        "answer": "Roczny serwis bojlera jest zalecany w celu utrzymania wydajności, zapobiegania awariom i zapewnienia ważności gwarancji. Świadczymy certyfikowany serwis bojlerów."
       },
       "item2": {
         "question": "Czy naprawiacie przeciekające grzejniki?",
@@ -280,7 +280,7 @@
           "title": "Instalacje Nowych Bojlerów",
           "points": {
             "advice": {
-              "title": "Ekspercka Porada",
+              "title": "Profesjonalna Porada",
               "desc": "Bezpłatna konsultacja pomagająca wybrać odpowiedni bojler dla Twojego domu i budżetu."
             },
             "installation": {
